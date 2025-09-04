@@ -1,0 +1,125 @@
+/* CSS for styling the website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(immg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0; /* Lighter text for contrast */
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Allows content to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif; /* More creative font */
+    font-size: 3.8em;
+    margin-bottom: 0.2em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    color: #90ee90; /* Light green for vibrancy */
+}
+
+header p {
+    font-size: 1.4em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.robot-intro {
+    background: rgba(46, 139, 87, 0.85); /* Slightly darker green for the robot's section */
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border: 2px solid #66bb6a;
+    text-align: left;
+}
+
+.robot-intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0f2f1; /* Lighter cyan for the robot's speech */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.robot-intro p {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.content h2 {
+    text-align: center;
+    color: #90ee90; /* Light green for headings */
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content h3 {
+    color: #a5d6a7;
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque for better contrast */
+    margin-bottom: 10px;
+    padding: 18px;
+    border-left: 6px solid #90ee90; /* Matching green for accents */
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    .robot-intro h2, .content h2 {
+        font-size: 1.8em;
+    }
+    .content p, ul li {
+        font-size: 1em;
+    }
+}
